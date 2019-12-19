@@ -1,14 +1,63 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Traveler by freehtml5.co
+	Twitter: http://twitter.com/fh5co
+	URL: http://freehtml5.co
+-->
 <html>
-<head>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Traveler &mdash; Free Website Template, Free HTML5 Template by FreeHTML5.co</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.co" />
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
-integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
-crossorigin="anonymous">
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
 
-<title>test layout</title>
-</head>
-<body>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{{ asset('traveler/css/animate.css')}}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{{ asset('traveler/css/icomoon.css')}}">
+	<!-- Themify Icons-->
+	<link rel="stylesheet" href="{{ asset('traveler/css/themify-icons.css')}}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{{ asset('traveler/css/bootstrap.css')}}">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{{ asset('traveler/css/magnific-popup.css')}}">
+
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{{ asset('traveler/css/bootstrap-datepicker.min.css')}}">
+
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="{{ asset('traveler/css/owl.carousel.min.css')}}">
+	<link rel="stylesheet" href="{{ asset('traveler/css/owl.theme.default.min.css')}}">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="{{ asset('traveler/css/style.css')}}">
+
+	<!-- Modernizr JS -->
+	<script src="{{asset ('traveler/js/modernizr-2.6.2.min.js')}}"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
 
 {% block header %}
     <h1>Header</h1>
@@ -33,7 +82,10 @@ blanditiis voluptatem nam hic sapiente molestias obcaecati sed harum consectetur
     <h3>Footer</h3>
     {% include 'footer.html.twig' %}
     <hr>
-{% endblock %}   
+{% endblock %} 
+
+{% block javascript %}
+{% endblock %}
 
 </body>
 </html>
