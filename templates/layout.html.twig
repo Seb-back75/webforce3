@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+crossorigin="anonymous">
+
+<title>test layout</title>
+</head>
+<body>
+
+{% block header %}
+    <h1>Header</h1>
+    <p>ceci est un test</p>
+    {% include 'header.html.twig' %}
+    <hr>
+{% endblock %}       
+
+{% block navigation %}
+    <h2>Navigation</h2>
+    {% include 'navigation.html.twig' %}
+    <hr>
+{% endblock %}    
+
+{%  block body %}
+Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+Distinctio est culpa nihil recusandae, dolorem ipsa quas illum aliquam quasi 
+blanditiis voluptatem nam hic sapiente molestias obcaecati sed harum consectetur quia?
+{% endblock %}
+
+{% block footer %}
+    <h3>Footer</h3>
+    {% include 'footer.html.twig' %}
+    <hr>
+{% endblock %}   
+
+</body>
+</html>
