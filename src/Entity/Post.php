@@ -24,7 +24,7 @@ class Post
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $tiltre;
+    private $title;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -34,7 +34,7 @@ class Post
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $contentt;
+    private $content;
 
     /**
      * @ORM\Column(type="datetime")
@@ -62,18 +62,6 @@ class Post
         return $this->id;
     }
 
-    public function getTiltre(): ?string
-    {
-        return $this->tiltre;
-    }
-
-    public function setTiltre(string $tiltre): self
-    {
-        $this->tiltre = $tiltre;
-
-        return $this;
-    }
-
     public function getSummary(): ?string
     {
         return $this->summary;
@@ -82,18 +70,6 @@ class Post
     public function setSummary(string $summary): self
     {
         $this->summary = $summary;
-
-        return $this;
-    }
-
-    public function getContentt(): ?string
-    {
-        return $this->contentt;
-    }
-
-    public function setContentt(string $contentt): self
-    {
-        $this->contentt = $contentt;
 
         return $this;
     }
@@ -130,5 +106,29 @@ class Post
     public function getImageFile()
     {
         return $this->imageFile;
+    }
+
+    public function getTitle(): ?string
+    {
+        return $this->title;
+    }
+
+    public function setTitle(string $title): self
+    {
+        $this->title = $title;
+
+        return $this;
+    }
+
+    public function getContent(): ?string
+    {
+        return $this->content;
+    }
+
+    public function setContent(string $content): self
+    {
+        $this->content = $content;
+
+        return $this;
     }
 }

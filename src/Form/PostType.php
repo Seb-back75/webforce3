@@ -13,9 +13,9 @@ class PostType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('tiltre')
+            ->add('title')
             ->add('summary')
-            ->add('contentt')
+            ->add('content')
             ->add('imageFile', VichImageType::class, array(
                 'required' => true,
                 'allow_delete' => true,

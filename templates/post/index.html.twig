@@ -9,9 +9,9 @@
         <thead>
             <tr>
                 <th>Id</th>
-                <th>Tiltre</th>
+                <th>Title</th>
                 <th>Summary</th>
-                <th>Contentt</th>
+                <th>Content</th>
                 <th>Created_at</th>
                 <th>Image</th>
                 <th>actions</th>
@@ -21,9 +21,9 @@
         {% for post in posts %}
             <tr>
                 <td>{{ post.id }}</td>
-                <td>{{ post.tiltre }}</td>
+                <td>{{ post.title }}</td>
                 <td>{{ post.summary }}</td>
-                <td>{{ post.contentt }}</td>
+                <td>{{ post.content }}</td>
                 <td>{{ post.createdAt ? post.createdAt|date('Y-m-d H:i:s') : '' }}</td>
                 <td>{{ post.image }}</td>
                 <td>
