@@ -41,8 +41,19 @@ class Post
      */
     private $created_at;
 
+    /** 
+    * @ORM\ManyToOne(targetEntity="App\Entity\User")
+    */
+    private $user;
+
+    /** 
+    * @ORM\ManyToOne(targetEntity="App\Entity\Post")
+    */
+    private $post;
+
     /**
      * @ORM\Column(type="string", length=255)
+     * @var string
      */
     private $image;
 
@@ -54,7 +65,7 @@ class Post
 
     public function __construct()
     {
-        $this->created_at = new \Datetime;
+        $this->created_at = new \Datetime();
     }
 
     public function getId(): ?int
